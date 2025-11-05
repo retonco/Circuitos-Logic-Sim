@@ -1,3 +1,4 @@
+
 # Circuitos-Logic-Sim
 
 ## 4-bit Adder
@@ -19,7 +20,6 @@ O circuito é formado por:
 - **1 Half Adder (somador de meio bit)** → usado para o primeiro bit (bit menos significativo).  
 - **3 Full Adders (somadores completos)** → usados para os outros três bits.
 
-  
 #### Half Adder
 O *half adder* (somador de meio bit) é o circuito mais simples usado para realizar a soma de dois bits binários.  
 Não possui entrada de transporte (carry in) e por isso é chamado de “meio somador”.  
@@ -54,4 +54,46 @@ Assim, o circuito consegue somar dois números binários, bit por bit, de forma 
 
 ---
 
-Este circuito foi criado utilizando o aplicativo **Digital Logic Sim**, desenvolvido por **Sebastian Lague**, disponível no **itch.io**.
+## Full Subtractor
+
+### Entradas
+- **A**: Bit minuendo, ou seja, o valor principal do qual será feita a subtração.
+- **B**: Bit subtraendo, ou seja, o valor que será subtraído.
+- **Borrow In**: Indica se houve empréstimo da subtração anterior (bit menos significativo).
+
+### Saídas
+- **Diff (Diferença)**: Resultado final da subtração entre **A**, **B** e **Borrow In**.
+- **Borrow Out**: Indica se será necessário “emprestar” do bit à esquerda.
+
+## Estrutura do Circuito
+
+O **Full Subtractor** (subtrator completo) é formado por **duas partes menores** chamadas **Half Subtractors** (meios subtratores) e **uma porta OR** no final.
+
+Para isso, o circuito recebe **três valores de entrada (A, B e Borrow In)** e realiza uma subtração entre eles, **bit por bit**.
+
+Resultando em:
+- **Diff:** resultado final da subtração  
+- **Borrow Out:** indica se foi necessário pegar “1” do próximo bit mais à esquerda
+
+### Primeiro Half Subtractor
+- **Entradas:** A e B  
+- **Função:** faz uma subtração simples entre esses dois bits.  
+- **Saídas:**
+  - `diff₁`: resultado da primeira subtração 
+  - `borrow₁`: indica se foi preciso “pegar emprestado” 
+
+### Segundo Half Subtractor
+- **Entradas:** `diff₁` (diferença anterior) e `Borrow In` (empréstimo da subtração anterior)  
+- **Função:** faz nova subtração levando em conta o empréstimo.  
+- **Saídas:**
+  - `diff`: diferença final  
+  - `borrow₂`: indica novo empréstimo 
+
+### Combinação dos Empréstimos
+As duas saídas de empréstimo (`borrow₁` e `borrow₂`) são unidas com **uma porta OR**, resultado no `Borrow Out`
+
+Isso mostra se o circuito precisou “pegar emprestado” no total, independente da etapa.
+
+---
+
+Todos os circuitos foram criados utilizando o aplicativo **Digital Logic Sim**, desenvolvido por **Sebastian Lague**, disponível no **itch.io**.
