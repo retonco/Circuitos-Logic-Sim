@@ -30,7 +30,6 @@ Não possui entrada de transporte (carry in) e por isso é chamado de “meio so
 
 Como não possui entrada de carry, geralmente é usado como a primeira etapa na construção de somadores maiores.
 
-
 #### Full Adder
 Cada *full adder* soma três valores:
 1. Um bit de A  
@@ -65,9 +64,9 @@ Assim, o circuito consegue somar dois números binários, bit por bit, de forma 
 - **Diff (Diferença)**: Resultado final da subtração entre **A**, **B** e **Borrow In**.
 - **Borrow Out**: Indica se será necessário “emprestar” do bit à esquerda.
 
-## Estrutura do Circuito
+### Estrutura do Circuito
 
-O **Full Subtractor** (subtrator completo) é formado por **duas partes menores** chamadas **Half Subtractors** (meios subtratores) e **uma porta OR** no final.
+O *full subtractor* (subtrator completo) é formado por **duas partes menores** chamadas *half subtractors* (meios subtratores) e **uma porta OR** no final.
 
 Para isso, o circuito recebe **três valores de entrada (A, B e Borrow In)** e realiza uma subtração entre eles, **bit por bit**.
 
@@ -75,21 +74,21 @@ Resultando em:
 - **Diff:** resultado final da subtração  
 - **Borrow Out:** indica se foi necessário pegar “1” do próximo bit mais à esquerda
 
-### Primeiro Half Subtractor
+#### Primeiro Half Subtractor:
 - **Entradas:** A e B  
 - **Função:** faz uma subtração simples entre esses dois bits.  
 - **Saídas:**
   - `diff₁`: resultado da primeira subtração 
   - `borrow₁`: indica se foi preciso “pegar emprestado” 
 
-### Segundo Half Subtractor
+#### Segundo Half Subtractor:
 - **Entradas:** `diff₁` (diferença anterior) e `Borrow In` (empréstimo da subtração anterior)  
 - **Função:** faz nova subtração levando em conta o empréstimo.  
 - **Saídas:**
   - `diff`: diferença final  
   - `borrow₂`: indica novo empréstimo 
 
-### Combinação dos Empréstimos
+#### Combinação dos Empréstimos:
 As duas saídas de empréstimo (`borrow₁` e `borrow₂`) são unidas com **uma porta OR**, resultado no `Borrow Out`
 
 Isso mostra se o circuito precisou “pegar emprestado” no total, independente da etapa.
