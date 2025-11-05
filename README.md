@@ -10,8 +10,8 @@
 Essas duas entradas são representadas pelos blocos **4–1BIT**, que farão a operação de soma bit a bit.
 
 ### Saídas
-- **OUT (SOMA – 4 bits)**: Mostra o resultado final da soma binária dos dois números (S0, S1, S2, S3).  
-- **OUT (CARRY OUT)**: Também chamado de **bit de transporte**, é o “vai-um” que sobra da última soma, indicando que o resultado passou do limite de 4 bits.
+- **OUT (Soma - 4 bits)**: Mostra o resultado final da soma binária dos dois números (S0, S1, S2, S3).  
+- **OUT (Carry Out - 1 bit)**: Também chamado de **bit de transporte**, é o “vai-um” que sobra da última soma, indicando que o resultado passou do limite de 4 bits.
 
 ### Explicação
 O **4-bit Adder** (somador de 4 bits) é um circuito combinacional que soma **dois números binários de 4 bits**, gerando um **resultado de 4 bits** e, às vezes, um **bit de transporte (carry out)** quando a soma ultrapassa o valor máximo que 4 bits conseguem representar.
