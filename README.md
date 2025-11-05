@@ -17,8 +17,8 @@ Essas duas entradas são representadas pelos blocos **4–1BIT**, que farão a o
 O **4-bit Adder** (somador de 4 bits) é um circuito combinacional que soma **dois números binários de 4 bits**, gerando um **resultado de 4 bits** e, às vezes, um **bit de transporte (carry out)** quando a soma ultrapassa o valor máximo que 4 bits conseguem representar.
 
 O circuito é formado por:
-- **1 Half Adder (somador de meio bit)** → usado para o primeiro bit (bit menos significativo).  
-- **3 Full Adders (somadores completos)** → usados para os outros três bits.
+- **1 Half Adder (somador de meio bit)**: usado para o primeiro bit (bit menos significativo).  
+- **3 Full Adders (somadores completos)**: usados para os outros três bits.
 
 #### Half Adder
 O *half adder* (somador de meio bit) é o circuito mais simples usado para realizar a soma de dois bits binários.  
