@@ -21,7 +21,7 @@ O circuito é formado por:
 - **3 Full Adders (somadores completos)**: usados para os outros três bits.
 
 #### Half Adder
-O *half adder* (somador de meio bit) é o circuito mais simples usado para realizar a soma de dois bits binários.  
+O Half adder (somador de meio bit) é o circuito mais simples usado para realizar a soma de dois bits binários.  
 Não possui entrada de transporte (carry in) e por isso é chamado de “meio somador”.  
 
 É montado com:
@@ -31,12 +31,12 @@ Não possui entrada de transporte (carry in) e por isso é chamado de “meio so
 Como não possui entrada de carry, geralmente é usado como a primeira etapa na construção de somadores maiores.
 
 #### Full Adder
-Cada *full adder* soma três valores:
+Cada Full Adder soma três valores:
 1. Um bit de A  
 2. Um bit de B  
 3. O carry (bit de transporte) que veio da soma anterior  
 
-O *carry out* de um somador vai para o *carry in* do próximo, formando uma cadeia de somas, até chegar no último bit.
+O **carry out** de um somador vai para o **carry in** do próximo, formando uma cadeia de somas, até chegar no último bit.
 
 ---
 
@@ -66,7 +66,7 @@ Assim, o circuito consegue somar dois números binários, bit por bit, de forma 
 
 ### Estrutura do Circuito
 
-O *full subtractor* (subtrator completo) é formado por duas partes menores chamadas *half subtractors* (meios subtratores) e uma **porta OR** no final.
+O Full Subtractor (subtrator completo) é formado por duas partes menores chamadas Half Subtractors (meios subtratores) e uma **porta OR** no final.
 
 Para isso, o circuito recebe três valores de entrada (A, B e Borrow In) e realiza uma subtração entre eles, **bit por bit**.
 
@@ -85,7 +85,7 @@ Para isso, o circuito recebe três valores de entrada (A, B e Borrow In) e reali
   - **borrow₂**: indica novo empréstimo 
 
 #### Combinação dos Empréstimos:
-As duas saídas de empréstimo (**borrow₁** e **borrow₂**) são unidas com **uma porta OR**, resultado no **Borrow Out**.
+As duas saídas de empréstimo (**borrow₁** e **borrow₂**) são unidas com **uma porta OR**, resultando no **Borrow Out**.
 
 Isso mostra se o circuito precisou “pegar emprestado” no total, independente da etapa.
 
