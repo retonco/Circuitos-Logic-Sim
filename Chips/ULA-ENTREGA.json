@@ -1,0 +1,138 @@
+{
+  "DLSVersion": "2.1.6",
+  "Name": "ULA-ENTREGA",
+  "NameLocation": 0,
+  "ChipType": 0,
+  "Size": {
+    "x": 1.775,
+    "y": 2.0
+  },
+  "Colour": {
+    "r": 0.940554142,
+    "g": 0.729689062,
+    "b": 0.6426682,
+    "a": 1
+  },
+  "InputPins":[
+    {
+      "Name":"IN",
+      "ID":1231526960,
+      "Position":{
+        "x":-11.99212,
+        "y":1.88654
+      },
+      "BitCount":4,
+      "Colour":0,
+      "ValueDisplayMode":0
+    },
+    {
+      "Name":"IN",
+      "ID":1391034397,
+      "Position":{
+        "x":-12.27402,
+        "y":-2.93535
+      },
+      "BitCount":4,
+      "Colour":0,
+      "ValueDisplayMode":0
+    }
+  ],
+  "OutputPins":[
+    {
+      "Name":"OUT",
+      "ID":911330894,
+      "Position":{
+        "x":9.92019,
+        "y":5.12839
+      },
+      "BitCount":1,
+      "Colour":0,
+      "ValueDisplayMode":0
+    },
+    {
+      "Name":"OUT",
+      "ID":1566660933,
+      "Position":{
+        "x":11.24295,
+        "y":0.60715
+      },
+      "BitCount":4,
+      "Colour":0,
+      "ValueDisplayMode":0
+    }
+  ],
+  "SubChips":[
+    {
+      "Name":"DEMUX-2CBIT-4DBIT",
+      "ID":721184143,
+      "Label":"",
+      "Position":{
+        "x":-7.44643,
+        "y":-2.09112
+      },
+      "OutputPinColourInfo":[{"PinColour":0,"PinID":1888239667},{"PinColour":0,"PinID":540914726},{"PinColour":0,"PinID":1271510601},{"PinColour":0,"PinID":320425588}],
+      "InternalData":null
+    },
+    {
+      "Name":"DEMUX-2CBIT-4DBIT",
+      "ID":352300399,
+      "Label":"",
+      "Position":{
+        "x":-7.21861,
+        "y":2.96639
+      },
+      "OutputPinColourInfo":[{"PinColour":0,"PinID":1888239667},{"PinColour":0,"PinID":540914726},{"PinColour":0,"PinID":1271510601},{"PinColour":0,"PinID":320425588}],
+      "InternalData":null
+    },
+    {
+      "Name":"MUX-2CBIT-4DBIT",
+      "ID":416269112,
+      "Label":"",
+      "Position":{
+        "x":7.3616,
+        "y":0.57433
+      },
+      "OutputPinColourInfo":[{"PinColour":0,"PinID":1888239667}],
+      "InternalData":null
+    },
+    {
+      "Name":"4BIT-OR",
+      "ID":394684748,
+      "Label":"",
+      "Position":{
+        "x":1.19918,
+        "y":-4.15285
+      },
+      "OutputPinColourInfo":[{"PinColour":0,"PinID":1796691545}],
+      "InternalData":null
+    },
+    {
+      "Name":"4BIT-AND",
+      "ID":1409194455,
+      "Label":"",
+      "Position":{
+        "x":1.13084,
+        "y":-2.10251
+      },
+      "OutputPinColourInfo":[{"PinColour":0,"PinID":2214105}],
+      "InternalData":null
+    }
+  ],
+  "Wires":[
+    {
+      "SourcePinAddress":{
+        "PinID":1888239667,
+        "PinOwnerID":416269112
+      },
+      "TargetPinAddress":{
+        "PinID":0,
+        "PinOwnerID":1566660933
+      },
+      "ConnectionType":0,
+      "ConnectedWireIndex":-1,
+      "ConnectedWireSegmentIndex":-1,
+      "Points":[{"x":0.0,"y":0.0},{"x":0.0,"y":0.0}]
+    }
+  ],
+  "Displays": null
+}
