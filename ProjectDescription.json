@@ -3,7 +3,7 @@
   "DLSVersion_LastSaved": "2.1.6",
   "DLSVersion_EarliestCompatible": "2.0.0",
   "CreationTime": "2025-11-04T14:47:48.816-03:00",
-  "LastSaveTime": "2025-11-25T21:55:55.103-03:00",
+  "LastSaveTime": "2025-11-28T17:18:00.866-03:00",
   "Prefs_MainPinNamesDisplayMode": 0,
   "Prefs_ChipPinNamesDisplayMode": 2,
   "Prefs_GridDisplayMode": 0,
@@ -40,7 +40,9 @@
     "DEMUX-2CBIT-4DBIT",
     "4BIT-ADDER",
     "full-sub",
-    "half-sub"
+    "half-sub",
+    "3MUX",
+    "3DEMUX"
   ],
   "StarredList":[
     {
@@ -98,6 +100,18 @@
     {
       "Name":"3CONTROL",
       "IsCollection":false
+    },
+    {
+      "Name":"BUS-1",
+      "IsCollection":false
+    },
+    {
+      "Name":"3MUX",
+      "IsCollection":false
+    },
+    {
+      "Name":"3DEMUX",
+      "IsCollection":false
     }
   ],
   "ChipCollections":[
@@ -118,7 +132,7 @@
     },
     {
       "Chips":["BUS-1","BUS-4","BUS-8"],
-      "IsToggledOpen":false,
+      "IsToggledOpen":true,
       "Name":"BUS"
     },
     {
