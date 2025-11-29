@@ -18,8 +18,8 @@
       "Name":"IN",
       "ID":515374906,
       "Position":{
-        "x":-9.34808,
-        "y":3.61113
+        "x":-10.57305,
+        "y":2.42733
       },
       "BitCount":1,
       "Colour":0,
@@ -29,8 +29,8 @@
       "Name":"IN",
       "ID":146735120,
       "Position":{
-        "x":-9.34808,
-        "y":3.09613
+        "x":-10.57305,
+        "y":1.91233
       },
       "BitCount":1,
       "Colour":0,
@@ -40,8 +40,8 @@
       "Name":"IN",
       "ID":164000428,
       "Position":{
-        "x":-9.34808,
-        "y":2.58113
+        "x":-10.57305,
+        "y":1.39733
       },
       "BitCount":1,
       "Colour":0,
@@ -155,8 +155,8 @@
       "ID":1316935651,
       "Label":"",
       "Position":{
-        "x":-6.6855,
-        "y":3.07043
+        "x":-7.74577,
+        "y":2.02045
       },
       "OutputPinColourInfo":[{"PinColour":0,"PinID":2134728382},{"PinColour":0,"PinID":241981303},{"PinColour":0,"PinID":797155159},{"PinColour":0,"PinID":1865190275},{"PinColour":0,"PinID":726926887},{"PinColour":0,"PinID":1871197020},{"PinColour":0,"PinID":485870656},{"PinColour":0,"PinID":2099744003}],
       "InternalData":null
