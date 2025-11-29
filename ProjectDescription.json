@@ -3,7 +3,7 @@
   "DLSVersion_LastSaved": "2.1.6",
   "DLSVersion_EarliestCompatible": "2.0.0",
   "CreationTime": "2025-11-04T14:47:48.816-03:00",
-  "LastSaveTime": "2025-11-28T17:18:00.866-03:00",
+  "LastSaveTime": "2025-11-28T20:49:06.908-03:00",
   "Prefs_MainPinNamesDisplayMode": 0,
   "Prefs_ChipPinNamesDisplayMode": 2,
   "Prefs_GridDisplayMode": 0,
@@ -42,7 +42,16 @@
     "full-sub",
     "half-sub",
     "3MUX",
-    "3DEMUX"
+    "3DEMUX",
+    "Decoder 3CBit",
+    "OR-2D 4Bit",
+    "DEMUX-3CBit-4Bit",
+    "MUX-3CBit-4Bit",
+    "MUX-3CBit-2Bit",
+    "4BIT-SUB",
+    "XOR-2D 4Bit",
+    "AND-2C 4Bit",
+    "ULA"
   ],
   "StarredList":[
     {
@@ -102,15 +111,51 @@
       "IsCollection":false
     },
     {
-      "Name":"BUS-1",
-      "IsCollection":false
-    },
-    {
       "Name":"3MUX",
       "IsCollection":false
     },
     {
       "Name":"3DEMUX",
+      "IsCollection":false
+    },
+    {
+      "Name":"BUS",
+      "IsCollection":true
+    },
+    {
+      "Name":"Decoder 3CBit",
+      "IsCollection":false
+    },
+    {
+      "Name":"OR-2D 4Bit",
+      "IsCollection":false
+    },
+    {
+      "Name":"DEMUX-3CBit-4Bit",
+      "IsCollection":false
+    },
+    {
+      "Name":"MUX-3CBit-4Bit",
+      "IsCollection":false
+    },
+    {
+      "Name":"MUX-3CBit-2Bit",
+      "IsCollection":false
+    },
+    {
+      "Name":"4BIT-SUB",
+      "IsCollection":false
+    },
+    {
+      "Name":"XOR-2D 4Bit",
+      "IsCollection":false
+    },
+    {
+      "Name":"AND-2C 4Bit",
+      "IsCollection":false
+    },
+    {
+      "Name":"ULA",
       "IsCollection":false
     }
   ],
@@ -132,7 +177,7 @@
     },
     {
       "Chips":["BUS-1","BUS-4","BUS-8"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"BUS"
     },
     {
@@ -146,7 +191,7 @@
       "Name":"MEMORY"
     },
     {
-      "Chips":["BUZZER","half-adder","full-adder","2 BIT MUX","4OR - teste","decoder","DEMUX 2-BIT","decoder 2","MUX 2-BIT","MUX-2CBIT-4DBIT","ULA-ENTREGA","3CONTROL","DEMUX-2CBIT-4DBIT","full-sub","half-sub"],
+      "Chips":["BUZZER","half-adder","full-adder","2 BIT MUX","4OR - teste","decoder","DEMUX 2-BIT","decoder 2","MUX 2-BIT","MUX-2CBIT-4DBIT","ULA-ENTREGA","3CONTROL","DEMUX-2CBIT-4DBIT","full-sub","half-sub","3MUX","3DEMUX","Decoder 3CBit","OR-2D 4Bit","DEMUX-3CBit-4Bit","MUX-3CBit-4Bit","MUX-3CBit-2Bit"],
       "IsToggledOpen":true,
       "Name":"OTHER"
     },
@@ -156,7 +201,7 @@
       "Name":"BasicGates"
     },
     {
-      "Chips":["4BIT-SOMA","4BIT-OR","4BIT-AND","4BIT-ADDER"],
+      "Chips":["4BIT-SUB","4BIT-SOMA","4BIT-OR","4BIT-AND","4BIT-ADDER"],
       "IsToggledOpen":true,
       "Name":"4BIT"
     }
